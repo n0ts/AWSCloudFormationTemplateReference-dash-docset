@@ -17,19 +17,19 @@
                         see
                         <a href="http://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateCluster.html" target="_blank">CreateCluster</a> in the
                         <em>Amazon Redshift API Reference</em>.
-                     </p><div class="highlights">
+                     </p><div class="highlights" id="inline-topiclist">
                         <p><strong>Topics</strong></p>
                         <ul>
                            <li><a href="#aws-resource-redshift-cluster-syntax">Syntax</a></li>
-                           <li><a href="#w2ab2c21c10d889b9">Properties</a></li>
-                           <li><a href="#w2ab2c21c10d889c11">Return Values</a></li>
-                           <li><a href="#w2ab2c21c10d889c13">Example</a></li>
-                           <li><a href="#w2ab2c21c10d889c15">More Info</a></li>
+                           <li><a href="#w2ab2c21c10d915b9">Properties</a></li>
+                           <li><a href="#w2ab2c21c10d915c11">Return Values</a></li>
+                           <li><a href="#w2ab2c21c10d915c13">Example</a></li>
+                           <li><a href="#w2ab2c21c10d915c15">More Info</a></li>
                         </ul>
                      </div><h2 id="aws-resource-redshift-cluster-syntax">Syntax</h2><p>To declare this entity in your AWS CloudFormation template, use the following syntax:</p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-redshift-cluster-syntax.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">{
   &quot;Type&quot; : &quot;AWS::Redshift::Cluster&quot;,
   &quot;Properties&quot; : {
     &quot;<a href="aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade"><code class="code">AllowVersionUpgrade</code></a>&quot; : <em class="replaceable"><code>Boolean</code></em>,
@@ -65,7 +65,7 @@
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-redshift-cluster-syntax.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">Type: &quot;AWS::Redshift::Cluster&quot;
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">Type: &quot;AWS::Redshift::Cluster&quot;
 Properties: 
   <a href="aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade"><code class="code">AllowVersionUpgrade</code></a>: <em class="replaceable"><code>Boolean</code></em>
   <a href="aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod"><code class="code">AutomatedSnapshotRetentionPeriod</code></a>: <em class="replaceable"><code>Integer</code></em>
@@ -101,7 +101,7 @@ Properties:
   <a href="aws-resource-redshift-cluster.html#cfn-redshift-cluster-vpcsecuritygroupids"><code class="code">VpcSecurityGroupIds</code></a>:
     - <em class="replaceable"><code>String</code></em>
 </code></pre>
-                        </div><h2 id="w2ab2c21c10d889b9">Properties</h2><p>For more information about each property, including constraints and valid values,
+                        </div><h2 id="w2ab2c21c10d915b9">Properties</h2><p>For more information about each property, including constraints and valid values,
                         see <a href="http://docs.aws.amazon.com//redshift/latest/APIReference/API_CreateCluster.html" target="_blank">CreateCluster</a> in the <em>Amazon Redshift API Reference</em>.
                      </p><div class="variablelist">
                         
@@ -702,12 +702,12 @@ Properties:
                            </dd>
                            
                         </dl>
-                     </div><h2 id="w2ab2c21c10d889c11">Return Values</h2><h3 id="w2ab2c21c10d889c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code> intrinsic
+                     </div><h2 id="w2ab2c21c10d915c11">Return Values</h2><h3 id="w2ab2c21c10d915c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code> intrinsic
                         function, <code class="code">Ref</code> returns the resource name. For example:
-                     </p><pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">{ &quot;Ref&quot;: &quot;<em class="replaceable"><code>myCluster</code></em>&quot; }</code></pre><p>For the Amazon Redshift cluster <code class="code">myCluster</code>, <code class="code">Ref</code> returns the
+                     </p><pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">{ &quot;Ref&quot;: &quot;<em class="replaceable"><code>myCluster</code></em>&quot; }</code></pre><p>For the Amazon Redshift cluster <code class="code">myCluster</code>, <code class="code">Ref</code> returns the
                         name of the cluster.
                      </p><p>For more information about using the <code class="code">Ref</code> function, see <a href="intrinsic-function-reference-ref.html">Ref</a>.
-                     </p><h3 id="w2ab2c21c10d889c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
+                     </p><h3 id="w2ab2c21c10d915c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
                         The following are the available attributes and sample return values.
                      </p><div class="variablelist">
                         
@@ -738,13 +738,13 @@ Properties:
                            </dd>
                            
                         </dl>
-                     </div><h2 id="w2ab2c21c10d889c13">Example</h2><p>The following example describes a single-node Amazon Redshift cluster. The master
+                     </div><h2 id="w2ab2c21c10d915c13">Example</h2><p>The following example describes a single-node Amazon Redshift cluster. The master
                         user password is
                         referenced from an input parameter that is in the same template.
                      </p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-redshift-cluster-example.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">&quot;myCluster&quot;: {
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">&quot;myCluster&quot;: {
   &quot;Type&quot;: &quot;AWS::Redshift::Cluster&quot;,
   &quot;Properties&quot;: {
     &quot;DBName&quot;: &quot;mydb&quot;, 
@@ -763,7 +763,7 @@ Properties:
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-redshift-cluster-example.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">myCluster: 
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">myCluster: 
   Type: &quot;AWS::Redshift::Cluster&quot;
   Properties:
     DBName: &quot;mydb&quot;
@@ -775,7 +775,7 @@ Properties:
     Tags:
       - Key: foo
         Value: bar</code></pre>
-                        </div><h2 id="w2ab2c21c10d889c15">More Info</h2><p>For a complete example template, see <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-redshift.html">Amazon Redshift Template Snippets</a>.
+                        </div><h2 id="w2ab2c21c10d915c15">More Info</h2><p>For a complete example template, see <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-redshift.html">Amazon Redshift Template Snippets</a>.
                      </p></div>
 </body>
 </html>

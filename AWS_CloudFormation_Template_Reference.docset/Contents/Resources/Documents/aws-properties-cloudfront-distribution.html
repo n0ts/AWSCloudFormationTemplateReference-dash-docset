@@ -13,7 +13,7 @@
                         the <a href="http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html" target="_blank">Introduction to Amazon CloudFront</a> in
                         the <em>Amazon CloudFront Developer Guide</em>. For specific information about creating CloudFront web
                         distributions, see <a href="http://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateDistribution.html" target="_blank">CreateDistribution</a> in the <em>Amazon CloudFront API Reference</em>.
-                     </p><div class="highlights">
+                     </p><div class="highlights" id="inline-topiclist">
                         <p><strong>Topics</strong></p>
                         <ul>
                            <li><a href="#aws-resource-cloudfront-distribution-syntax">Syntax</a></li>
@@ -25,7 +25,7 @@
                      </div><h2 id="aws-resource-cloudfront-distribution-syntax">Syntax</h2><p>To declare this entity in your AWS CloudFormation template, use the following syntax:</p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-cloudfront-distribution-syntax.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">{
    &quot;Type&quot; : &quot;AWS::CloudFront::Distribution&quot;,
    &quot;Properties&quot; : {
       &quot;<a href="aws-properties-cloudfront-distribution.html#cfn-cloudfront-distribution-distributionconfig"><code class="literal">DistributionConfig</code></a>&quot; : <a href="aws-properties-cloudfront-distributionconfig.html"><em class="replaceable"><code>DistributionConfig</code></em></a>,
@@ -35,7 +35,7 @@
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-cloudfront-distribution-syntax.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">Type: &quot;AWS::CloudFront::Distribution&quot;
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">Type: &quot;AWS::CloudFront::Distribution&quot;
 Properties:
   <a href="aws-properties-cloudfront-distribution.html#cfn-cloudfront-distribution-distributionconfig"><code class="literal">DistributionConfig</code></a>: 
     <a href="aws-properties-cloudfront-distributionconfig.html"><em class="replaceable"><code>DistributionConfig</code></em></a>
@@ -91,10 +91,10 @@ Properties:
                            </dd>
                            
                         </dl>
-                     </div><h2 id="aws-properties-cloudfront-distribution-ref">Return Values</h2><h3 id="w2ab2c21c10d177c11b2">Ref</h3><p><em>Returns</em>: The CloudFront
+                     </div><h2 id="aws-properties-cloudfront-distribution-ref">Return Values</h2><h3 id="w2ab2c21c10d185c11b2">Ref</h3><p><em>Returns</em>: The CloudFront
                         distribution ID. For example: <code class="code">E27LVI50CSW06W</code>.
                      </p><p>For more information about using the <code class="code">Ref</code> function, see <a href="intrinsic-function-reference-ref.html">Ref</a>.
-                     </p><h3 id="w2ab2c21c10d177c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
+                     </p><h3 id="w2ab2c21c10d185c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
                         The following are the available attributes and sample return values.
                      </p><div class="variablelist">
                         
@@ -116,7 +116,7 @@ Properties:
                      </p><h2 id="aws-properties-cloudfront-distribution-examples">Example</h2><p>The following example specifies a distribution and assigns it a single tag.</p><div id="JSON" name="JSON" class="section langfilter">
                         
                         <h4 id="aws-properties-cloudfront-distribution-example1.json">JSON</h4>
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">{
     &quot;AWSTemplateFormatVersion&quot;: &quot;2010-09-09&quot;,
     &quot;Resources&quot;: {
         &quot;cloudfrontdistribution&quot;: {
@@ -164,7 +164,7 @@ Properties:
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         
                         <h4 id="aws-properties-cloudfront-distribution-example1.yaml">YAML</h4>
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">AWSTemplateFormatVersion: 2010-09-09
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">AWSTemplateFormatVersion: 2010-09-09
 Resources:
   cloudfrontdistribution:
     Type: &apos;AWS::CloudFront::Distribution&apos;

@@ -9,18 +9,18 @@
 <body>
     <div id="content" style="padding: 10px 30px;">
     <h1 class="topictitle" id="aws-resource-apigateway-stage">AWS::ApiGateway::Stage</h1><p>The <code class="code">AWS::ApiGateway::Stage</code> resource creates a stage for an Amazon API Gateway (API Gateway) deployment.
-                     </p><div class="highlights">
+                     </p><div class="highlights" id="inline-topiclist">
                         <p><strong>Topics</strong></p>
                         <ul>
                            <li><a href="#aws-resource-apigateway-stage-syntax">Syntax</a></li>
-                           <li><a href="#w2ab2c21c10c78b9">Properties</a></li>
-                           <li><a href="#w2ab2c21c10c78c11">Return Value</a></li>
+                           <li><a href="#w2ab2c21c10c81b9">Properties</a></li>
+                           <li><a href="#w2ab2c21c10c81c11">Return Value</a></li>
                            <li><a href="#aws-resource-apigateway-stage-examples">Example</a></li>
                         </ul>
                      </div><h2 id="aws-resource-apigateway-stage-syntax">Syntax</h2><p>To declare this entity in your AWS CloudFormation template, use the following syntax:</p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-apigateway-stage-syntax.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">{
   &quot;Type&quot; : &quot;AWS::ApiGateway::Stage&quot;,
   &quot;Properties&quot; : {
     &quot;<a href="aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled"><code class="code">CacheClusterEnabled</code></a>&quot; : <em class="replaceable"><code>Boolean</code></em>,
@@ -38,7 +38,7 @@
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-apigateway-stage-syntax.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">Type: &quot;AWS::ApiGateway::Stage&quot;
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">Type: &quot;AWS::ApiGateway::Stage&quot;
 Properties:
   <a href="aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled"><code class="code">CacheClusterEnabled</code></a>: <em class="replaceable"><code>Boolean</code></em>
   <a href="aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize"><code class="code">CacheClusterSize</code></a>: <em class="replaceable"><code>String</code></em>
@@ -53,7 +53,7 @@ Properties:
   <a href="aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables"><code class="code">Variables</code></a>:
     <em class="replaceable"><code>String</code></em>: <em class="replaceable"><code>String</code></em>
 </code></pre>
-                        </div><h2 id="w2ab2c21c10c78b9">Properties</h2><div class="variablelist">
+                        </div><h2 id="w2ab2c21c10c81b9">Properties</h2><div class="variablelist">
                         
                         
                         
@@ -243,14 +243,14 @@ Properties:
                            </dd>
                            
                         </dl>
-                     </div><h2 id="w2ab2c21c10c78c11">Return Value</h2><h3 id="w2ab2c21c10c78c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code> intrinsic function, <code class="code">Ref</code> returns the name of the stage, such as <code class="code">MyTestStage</code>.
+                     </div><h2 id="w2ab2c21c10c81c11">Return Value</h2><h3 id="w2ab2c21c10c81c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code> intrinsic function, <code class="code">Ref</code> returns the name of the stage, such as <code class="code">MyTestStage</code>.
                      </p><p>For more information about using the <code class="code">Ref</code> function, see <a href="intrinsic-function-reference-ref.html">Ref</a>.
                      </p><h2 id="aws-resource-apigateway-stage-examples">Example</h2><p>The following example creates a stage for the <code class="code">TestDeployment</code> deployment. The stage also specifies method 
                         settings for the <code class="code">MyRestApi</code> API.
                      </p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-apigateway-stage-example.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">{
     &quot;Resources&quot;: {
         &quot;Prod&quot;: {
             &quot;Type&quot;: &quot;AWS::ApiGateway::Stage&quot;,
@@ -301,7 +301,7 @@ Properties:
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-apigateway-stage-example.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">Resources:
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">Resources:
   Prod:
     Type: &apos;AWS::ApiGateway::Stage&apos;
     Properties:

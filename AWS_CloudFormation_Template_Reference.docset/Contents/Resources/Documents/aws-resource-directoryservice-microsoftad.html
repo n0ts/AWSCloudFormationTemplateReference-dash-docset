@@ -13,18 +13,18 @@
                         Console and AWS
                         applications using their existing credentials. For more information, see <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html" target="_blank">What Is AWS Directory Service?</a> in the
                         <em>AWS Directory Service Administration Guide</em>.
-                     </p><div class="highlights">
+                     </p><div class="highlights" id="inline-topiclist">
                         <p><strong>Topics</strong></p>
                         <ul>
                            <li><a href="#aws-resource-directoryservice-microsoftad-syntax">Syntax</a></li>
-                           <li><a href="#w2ab2c21c10d295b9">Properties</a></li>
-                           <li><a href="#w2ab2c21c10d295c11">Return Values</a></li>
-                           <li><a href="#w2ab2c21c10d295c13">Example</a></li>
+                           <li><a href="#w2ab2c21c10d302b9">Properties</a></li>
+                           <li><a href="#w2ab2c21c10d302c11">Return Values</a></li>
+                           <li><a href="#w2ab2c21c10d302c13">Example</a></li>
                         </ul>
                      </div><h2 id="aws-resource-directoryservice-microsoftad-syntax">Syntax</h2><p>To declare this entity in your AWS CloudFormation template, use the following syntax:</p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-directoryservice-microsoftad-syntax.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">{
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">{
   &quot;Type&quot; : &quot;AWS::DirectoryService::MicrosoftAD&quot;,
   &quot;Properties&quot; : {
     &quot;<a href="aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias"><code class="code">CreateAlias</code></a>&quot; : <em class="replaceable"><code>Boolean</code></em>,
@@ -38,7 +38,7 @@
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-directoryservice-microsoftad-syntax.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight">Type: &quot;AWS::DirectoryService::MicrosoftAD&quot;
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight">Type: &quot;AWS::DirectoryService::MicrosoftAD&quot;
 Properties:
   <a href="aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias"><code class="code">CreateAlias</code></a>: <em class="replaceable"><code>Boolean</code></em>
   <a href="aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-enablesso"><code class="code">EnableSso</code></a>: <em class="replaceable"><code>Boolean</code></em>
@@ -48,7 +48,7 @@ Properties:
   <a href="aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-vpcsettings"><code class="code">VpcSettings</code></a>:
     <em class="replaceable"><code>VpcSettings</code></em>
 </code></pre>
-                        </div><h2 id="w2ab2c21c10d295b9">Properties</h2><div class="variablelist">
+                        </div><h2 id="w2ab2c21c10d302b9">Properties</h2><div class="variablelist">
                         
                         
                         
@@ -182,12 +182,12 @@ Properties:
                            </dd>
                            
                         </dl>
-                     </div><h2 id="w2ab2c21c10d295c11">Return Values</h2><h3 id="w2ab2c21c10d295c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code>
+                     </div><h2 id="w2ab2c21c10d302c11">Return Values</h2><h3 id="w2ab2c21c10d302c11b2">Ref</h3><p>When the logical ID of this resource is provided to the <code class="code">Ref</code>
                         intrinsic function, <code class="code">Ref</code> returns the resource ID.
                      </p><p>In the following sample, the <code class="code">Ref</code> function returns the ID of the
                         <code class="code">myDirectory</code> directory, such as <code class="code">d-12345ab592</code>.
-                     </p><pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">{ &quot;Ref&quot;: &quot;myDirectory&quot; }</code></pre><p>For more information about using the <code class="code">Ref</code> function, see <a href="intrinsic-function-reference-ref.html">Ref</a>.
-                     </p><h3 id="w2ab2c21c10d295c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
+                     </p><pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">{ &quot;Ref&quot;: &quot;myDirectory&quot; }</code></pre><p>For more information about using the <code class="code">Ref</code> function, see <a href="intrinsic-function-reference-ref.html">Ref</a>.
+                     </p><h3 id="w2ab2c21c10d302c11b4">Fn::GetAtt</h3><p><code class="code">Fn::GetAtt</code> returns a value for a specified attribute of this type.
                         The following are the available attributes and sample return values.
                      </p><div class="variablelist">
                         
@@ -212,12 +212,12 @@ Properties:
                            
                         </dl>
                      </div><p>For more information about using <code class="code">Fn::GetAtt</code>, see <a href="intrinsic-function-reference-getatt.html">Fn::GetAtt</a>.
-                     </p><h2 id="w2ab2c21c10d295c13">Example</h2><p>The following example creates a Microsoft Active Directory in AWS, where the directory
+                     </p><h2 id="w2ab2c21c10d302c13">Example</h2><p>The following example creates a Microsoft Active Directory in AWS, where the directory
                         DNS name is <code class="code">corp.example.com</code>:
                      </p><div id="JSON" name="JSON" class="section langfilter">
                         <h3 id="aws-resource-directoryservice-microsoftad-example.json">JSON</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">&quot;myDirectory&quot; : {
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">&quot;myDirectory&quot; : {
   &quot;Type&quot; : &quot;AWS::DirectoryService::MicrosoftAD&quot;,
   &quot;Properties&quot; : {
     &quot;Name&quot; : &quot;corp.example.com&quot;,
@@ -232,7 +232,7 @@ Properties:
                         </div><div id="YAML" name="YAML" class="section langfilter">
                         <h3 id="aws-resource-directoryservice-microsoftad-example.yaml">YAML</h3>
                         
-                        <pre class="programlisting"><div class="btn-copy-code-container"><div class="btn btn-copy-code">Copy</div></div><code class="nohighlight ">myDirectory: 
+                        <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"></div><div class="btn-dark-theme" title="Dark theme" title-dark="Dark theme" title-light="Light theme"></div></div><code class="nohighlight ">myDirectory: 
   Type: &quot;AWS::DirectoryService::MicrosoftAD&quot;
   Properties: 
     Name: &quot;corp.example.com&quot;
